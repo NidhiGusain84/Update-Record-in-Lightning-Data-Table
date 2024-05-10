@@ -1,0 +1,6 @@
+<template>
+    <template lwc:if={contactData}>
+        <lightning-datatable key-field="Id" data={contactData} columns={columns} onsave={saveHandler}
+            draft-values={draftValues}></lightning-datatable>
+    </template>
+</template>
